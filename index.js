@@ -1,4 +1,4 @@
-var Buffer = require('buffer').Buffer
+var isBuffer = require('is-buffer')
 
 module.exports = function (buf) {
 	// If the buffer is backed by a Uint8Array, a faster version will work
@@ -12,7 +12,7 @@ module.exports = function (buf) {
 		}
 	}
 
-	if (Buffer.isBuffer(buf)) {
+	if (isBuffer(buf)) {
 		// This is the slow version that will work with any Buffer
 		// implementation (even in old browsers)
 		var arrayCopy = new Uint8Array(buf.length)

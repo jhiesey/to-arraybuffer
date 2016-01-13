@@ -30,5 +30,8 @@
   "devDependencies": {
     "tape": "^4.4.0",
     "zuul": "^3.9.0"
+  },
+  "dependencies": {
+    "is-buffer": "^1.1.1"
   }
 }
