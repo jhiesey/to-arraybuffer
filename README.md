@@ -19,7 +19,7 @@ var buffer = new Buffer(100)
 // Fill the buffer with some data
 
 var ab = toArrayBuffer(buffer)
-// `ab` now cotains the same data as `buffer`
+// `ab` now contains the same data as `buffer`
 ```
 
 ## License
