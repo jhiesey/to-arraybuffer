@@ -1,6 +1,6 @@
 {
   "name": "to-arraybuffer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get an ArrayBuffer from a Buffer as fast as possible",
   "main": "index.js",
   "scripts": {
