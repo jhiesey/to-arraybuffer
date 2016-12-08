@@ -21,6 +21,7 @@
     "read",
     "only"
   ],
+  "files": ["index.js"],
   "author": "John Hiesey",
   "license": "MIT",
   "bugs": {
