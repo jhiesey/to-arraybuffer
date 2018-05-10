@@ -1,16 +1,16 @@
-ui: tape
+sauce_connect: true
 browsers:
   - name: chrome
     version: 39..latest
   - name: firefox
     version: 34..latest
   - name: safari
-    version: 5..latest
+    version: 8..latest
   - name: ie
     version: 10..latest
-  - name: opera
-    version: 11..latest
+  - name: MicrosoftEdge
+    version: 13..latest
   - name: iphone
-    version: 5.1..latest
+    version: 9.3..latest
   - name: android
-    version: 4.0..latest
+    version: 4.4..latest
