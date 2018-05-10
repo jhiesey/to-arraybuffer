@@ -13,4 +13,4 @@ browsers:
   - name: iphone
     version: 9.3..latest
   - name: android
-    version: 4.4..latest
+    version: 4.4..6.0 # TODO: change this back to latest once https://github.com/airtap/browsers/issues/3 is fixed
