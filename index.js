@@ -7,6 +7,6 @@ module.exports = buf => {
   // If the buffer isn't a subarray, return the underlying ArrayBuffer
   // Otherwise we need to get a proper copy
   return buf.byteLength === buf.buffer.byteLength
-	  ? buf.buffer
+    ? buf.buffer
     : buf.buffer.slice(buf.byteOffset, buf.byteOffset + buf.byteLength)
 }
