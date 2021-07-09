@@ -1,3 +1,4 @@
+/** @param {ArrayBufferView} buf */
 module.exports = buf => {
   if (buf instanceof ArrayBuffer) return buf
 
