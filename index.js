@@ -5,10 +5,8 @@ module.exports = buf => {
   if (!ArrayBuffer.isView(buf)) throw new Error('Argument must be a ArrayBufferView')
 
   // If the buffer isn't a subarray, return the underlying ArrayBuffer
-  if (buf.byteLength === buf.buffer.byteLength) {
-    return buf.buffer
-  }
-
-  // Otherwise we need to get a proper copy
-  return buf.buffer.slice(buf.byteOffset, buf.byteOffset + buf.byteLength)
+	// Otherwise we need to get a proper copy
+  return buf.byteLength === buf.buffer.byteLength
+	  ? buf.buffer
+    : buf.buffer.slice(buf.byteOffset, buf.byteOffset + buf.byteLength)
 }
