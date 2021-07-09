@@ -13,12 +13,12 @@ when using [the Buffer implementation provided by Browserify](https://www.npmjs.
 ## Usage
 
 ``` js
-var toArrayBuffer = require('to-arraybuffer')
+import toArrayBuffer from 'to-arraybuffer'
 
-var buffer = new Buffer(100)
+const buffer = Buffer.alloc(100)
 // Fill the buffer with some data
 
-var ab = toArrayBuffer(buffer)
+const ab = toArrayBuffer(buffer)
 // `ab` now contains the same data as `buffer`
 ```
 
