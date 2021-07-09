@@ -14,7 +14,7 @@ function elementsEqual (ab, buffer) {
 }
 
 test('Basic behavior', function (t) {
-	var buf = new Buffer(10)
+	var buf = Buffer.alloc(10)
 	for (var i = 0; i < 10; i++) {
 		buf[i] = i
 	}
@@ -27,7 +27,7 @@ test('Basic behavior', function (t) {
 })
 
 test('Behavior when input is a subarray 1', function (t) {
-	var origBuf = new Buffer(10)
+	var origBuf = Buffer.alloc(10)
 	for (var i = 0; i < 10; i++) {
 		origBuf[i] = i
 	}
@@ -42,7 +42,7 @@ test('Behavior when input is a subarray 1', function (t) {
 })
 
 test('Behavior when input is a subarray 2', function (t) {
-	var origBuf = new Buffer(10)
+	var origBuf = Buffer.alloc(10)
 	for (var i = 0; i < 10; i++) {
 		origBuf[i] = i
 	}
