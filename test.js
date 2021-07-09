@@ -1,7 +1,7 @@
 const Buffer = require('buffer').Buffer
 const test = require('tape')
 
-const toArrayBuffer = require('.')
+const toArrayBuffer = require('./index.js')
 
 function elementsEqual (ab, buffer) {
   const view = new Uint8Array(ab)
