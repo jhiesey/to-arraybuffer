@@ -1,4 +1,4 @@
-const Buffer = require('buffer').Buffer
+const { Buffer } = require('buffer')
 const test = require('tape')
 
 const toArrayBuffer = require('./index.js')
